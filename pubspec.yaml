@@ -1,0 +1,24 @@
+name: furniture_app
+description: Furniture Shopping App
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  smooth_page_indicator: ^1.1.0
+
+# ... bagian atas tetap sama ...
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/lamp/
+    - assets/images/table/
+    - assets/images/chair/
+    - assets/images/bed/
+    - assets/images/logo/
+    - assets/images/splash.jpg
