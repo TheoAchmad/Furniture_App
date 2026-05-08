@@ -7,6 +7,8 @@ import '../widgets/product_card.dart';
 import 'product_screen.dart';
 import 'cart_screen.dart';
 import 'favorite_screen.dart';
+import 'notification_screen.dart';
+import 'profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -35,11 +37,11 @@ class _HomeScreenState extends State<HomeScreen> {
       body: IndexedStack(
         index: _selectedIndex,
         children: [
-          _buildHomeBody(cart),
-          const FavoriteScreen(),
-          const Center(child: Text('Notifikasi')),
-          const Center(child: Text('Profil')),
-        ],
+  _buildHomeBody(cart),
+  const FavoriteScreen(),
+  const NotificationScreen(),
+  const ProfileScreen(),
+],
       ),
       bottomNavigationBar: _buildBottomNav(),
     );

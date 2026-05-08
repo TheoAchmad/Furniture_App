@@ -68,7 +68,7 @@ class SuccessScreen extends StatelessWidget {
                   minimumSize: const Size(double.infinity, 52),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14)),
-                ),
+                ),  
                 child: const Text('Track your orders',
                     style: TextStyle(color: Colors.white, fontSize: 16)),
               ),
